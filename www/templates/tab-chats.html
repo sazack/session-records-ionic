@@ -1,0 +1,17 @@
+<ion-view view-title="Chats">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="student in studentLists" type="item-text-wrap">
+        <img ng-src="{{chat.face}}">
+        <h2>{{student.fname}} {{student.lname}}</h2>
+        <p>{{student.email}}</p>
+        <p> {{student.phone}} </p>
+        <button ng-click="delete(student.id)" value="delete" class="button button-assertive"> Delete </button>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+        <ion-option-button class="button-assertive" ng-click="remove(chat)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

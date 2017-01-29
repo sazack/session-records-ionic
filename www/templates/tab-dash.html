@@ -1,0 +1,45 @@
+<ion-view view-title="Dashboard">
+  <ion-content class="padding">
+    <!-- <h2>Welcome to Ionic</h2> -->
+    <form ng-submit="addStudent()">
+      <div class="list">
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">First Name</span>
+          <input type="text" ng-model="student.fname">
+        </label>
+        <label class="item item-input item-stacked-label">
+          <span class="input-label" >Last Name</span>
+          <input type="text" ng-model="student.lname">
+        </label>
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Email</span>
+          <input type="text" ng-model="student.email">
+        </label>
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Phone</span>
+          <input type="text" ng-model="student.phone">
+        </label>
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Address</span>
+          <input type="text" ng-model="student.address">
+        </label>
+        <div class="list">
+
+          <label class="item item-input item-select">
+            <div class="input-label">
+              Interest
+            </div>
+            <select>
+              <option value="web">Web</option>
+              <option value="ios">ios</option>
+              <option value="android">android</option>
+              <option value="others"> others </option>
+            </select>
+          </label>
+
+      </div>
+      <input type="submit" class="button button-positive" value="Submit">
+    </form>
+    </div>
+  </ion-content>
+</ion-view>
